@@ -1,12 +1,24 @@
 ---
-title:  "Exclude Post from Search Index"
-search: false
+title:  "How to move Partitioned Big Query Tables to AWS Athena"
+search: true
 categories: 
   - Jekyll
-last_modified_at: 2018-02-19T08:05:34-05:00
+last_modified_at: 2020-06-04T08:05:34-05:00
 ---
 
-This post should not appear in the search index because it has the following YAML Front Matter:
+There are so many awesome articles explaining stepwise execution for the flow of data from AWS setup to GCS like :
+[from s3 to gcp](https://cloud.google.com/solutions/transferring-data-from-amazon-s3-to-cloud-storage-using-vpc-service-controls-and-storage-transfer-service)
+But I faced some troubles while doing the other way around. It took me a few hours to properly setup. So I thought of sharing my work which might end up saving you some time.
+Here is the GitHub repo :
+[from s3 to gcp](https://github.com/xxsacxx/bq2s3)
+
+After this, you will have an understanding of:
+- How to work with partitioned tables in Big Query
+- Moving partitioned tables from Big Query to GCS
+- Exporting avro file from GCS to S3
+- Getting the schema file from avro file
+- Converting avro data to parquet data format
+
 
 ```yaml
 search: false
